@@ -1,2 +1,2 @@
 # Golem
- Group/Collaboritive Project
+ Group/Collaborative Project

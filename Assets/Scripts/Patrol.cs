@@ -12,11 +12,11 @@ public class Patrol : MonoBehaviour
     {
         golemPatrol = GetComponent<NavMeshAgent>();
         orePile = GameObject.FindGameObjectWithTag("Objective");
+        golemPatrol.SetDestination(orePile.transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        golemPatrol.SetDestination(orePile.transform.position);
     }
 }

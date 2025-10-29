@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     public float gravity = -9.81f;
     public float mouseSensitivity = 100f;
     public Transform playerCamera;
+    public GameObject rockPrefab;
+    public Transform throwPoint;
+    public float throwForce = 10f;
 
     CharacterController controller;
     Vector3 velocity;
@@ -53,5 +56,23 @@ public class PlayerController : MonoBehaviour
         // Gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        HandleThrow();
+    }
+
+    void HandleThrow()
+    {
+        if (Input.GetMouseButtonDown(0)) // Left click
+        {
+            if (rockPrefab != null && throwPoint != null)
+            {
+                GameObject rock = Instantiate(rockPrefab, throwPoint.position, throwPoint.rotation);
+                Rigidbody rb = rock.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.AddForce(throwPoint.forward * throwForce, ForceMode.VelocityChange);
+                }
+            }
+        }
     }
 }

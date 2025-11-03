@@ -1133,7 +1133,7 @@ Transform:
   m_GameObject: {fileID: 926463633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.847, z: 1.078}
+  m_LocalPosition: {x: 0, y: -0.013, z: 0.049}
   m_LocalScale: {x: 0.6, y: 1, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2137,7 +2137,7 @@ Transform:
   m_GameObject: {fileID: 1245909480}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 503.01, y: 39.4, z: 508.3}
+  m_LocalPosition: {x: 503.01, y: 32.18, z: 507.55}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2163,7 +2163,7 @@ MonoBehaviour:
   gravity: -10
   mouseSensitivity: 100
   playerCamera: {fileID: 1705393616}
-  rockPrefab: {fileID: 4253985284140170745, guid: 10b3ba8dacd937743b750b052a4ec225, type: 3}
+  rockPrefab: {fileID: 8252518161685114957, guid: 10b3ba8dacd937743b750b052a4ec225, type: 3}
   throwPoint: {fileID: 778832714}
   throwForce: 10
 --- !u!143 &1245909486

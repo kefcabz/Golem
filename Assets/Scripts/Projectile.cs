@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 20f;      
+    public float speed = 20f;
+    public float spin = 400f;
     public float lifetime = 10f;    
 
     void Start()

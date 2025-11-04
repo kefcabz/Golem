@@ -70,33 +70,19 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 61ea37b401ea617bd9a05b41549a5bf3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4609455425548962062}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 61ea37b401ea617bd9a05b41549a5bf3, type: 3}
-      insertIndex: -1
       addedObject: {fileID: -6113778042366551080}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 61ea37b401ea617bd9a05b41549a5bf3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3633135336448741693}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 61ea37b401ea617bd9a05b41549a5bf3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1833381059768577193}
   m_SourcePrefab: {fileID: 100100000, guid: 61ea37b401ea617bd9a05b41549a5bf3, type: 3}
 --- !u!1 &8252518161685114957 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61ea37b401ea617bd9a05b41549a5bf3, type: 3}
   m_PrefabInstance: {fileID: 9099448670041820444}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4609455425548962062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8252518161685114957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37eed667ea86c60d180baa82c45b2ed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  speed: 25
-  lifetime: 10
 --- !u!65 &-6113778042366551080
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -145,3 +131,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-1833381059768577193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252518161685114957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37eed667ea86c60d180baa82c45b2ed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  speed: 20
+  lifetime: 10

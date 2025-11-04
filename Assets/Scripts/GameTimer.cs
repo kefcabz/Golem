@@ -7,9 +7,9 @@ public class GameTimer : MonoBehaviour
 
     void Update()
     {
-        if (timerText != null)
+        if (gameTimerText != null)
         {
-            timerText.text = "Time: " + Time.time.ToString("F2"); // decimal places
+            gameTimerText.text = "Time Protected: " + Time.time.ToString("F2"); // decimal places
         }
     }
 }

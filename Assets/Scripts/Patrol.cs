@@ -38,3 +38,5 @@ public class Patrol : MonoBehaviour
             GameObject projectile=Instantiate(projPrefab,targetDirection.position,targetDirection.rotation);
         }
     }
+
+}

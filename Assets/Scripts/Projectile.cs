@@ -4,7 +4,7 @@ public class Projectile : MonoBehaviour
 {
     public float speed = 20f;
     public float spin = 400f;
-    public float lifetime = 10f;    
+    public float lifetime = 10f;
 
     void Start()
     {
@@ -18,6 +18,15 @@ public class Projectile : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

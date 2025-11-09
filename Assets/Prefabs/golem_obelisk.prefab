@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5187111267265167202}
   - component: {fileID: 4576908798346025588}
   - component: {fileID: 6020982236233320781}
+  - component: {fileID: 7051720004239855244}
+  - component: {fileID: 3423871505857279962}
   m_Layer: 0
   m_Name: golem_obelisk
   m_TagString: Enemy
@@ -28,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 136.89072, y: 31.43575, z: 143.2566}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6757765084458877798}
@@ -44,7 +46,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2.2
-  m_Speed: 50
+  m_Speed: 30
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -68,9 +70,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f8bb38a49d3a714597719c448688dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Patrol
-  orePile: {fileID: 0}
+  orePile: {fileID: 3918249799378525603, guid: add148c851158904f87620f57e4a55a4, type: 3}
   targetDirection: {fileID: 0}
-  projPrefab: {fileID: 0}
+  projPrefab: {fileID: 538588545579152717, guid: cff6b12c88feaee4f91017e5205c5c20, type: 3}
+  player: {fileID: 0}
+  vAngle: 45
+  vDistance: 15
+--- !u!65 &7051720004239855244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3446349290420067453}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.8117523, y: 4.154127, z: 1}
+  m_Center: {x: 0.38872528, y: 2.3633623, z: 0}
+--- !u!54 &3423871505857279962
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3446349290420067453}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6234027686738909660
 GameObject:
   m_ObjectHideFlags: 0

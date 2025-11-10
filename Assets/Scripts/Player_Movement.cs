@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 0f;
     public float jumpHeight = 2f;
     public float gravity = -9.81f;
     public float mouseSensitivity = 100f;

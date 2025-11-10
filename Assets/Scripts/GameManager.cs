@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public int oreCurrentHealth;
     public Slider oreHealthBar;
     public GameObject oreObject;
+    public static float scoreBonus=0;
+    public float totalScore = 0;
 
     public GameTimer gameTimer;
 
@@ -156,7 +158,8 @@ public class GameManager : MonoBehaviour
             gameOverPanel.SetActive(true);
 
         if (gameOverTimeText != null && gameTimer != null)
-            gameOverTimeText.text = "Time Protected: " + gameTimer.GetElapsedTime().ToString("F2") + "s";
+            totalScore = gameTimer.GetElapsedTime() + scoreBonus;
+            gameOverTimeText.text = "Time Protected: " + gameTimer.GetElapsedTime().ToString("F2") + "s\nBonus: " + scoreBonus.ToString("F2") + "\nTotal Score: " + totalScore.ToString("F2") + "pts";
 
         // Pause the game
         Time.timeScale = 0f;

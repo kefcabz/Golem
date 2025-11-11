@@ -159,7 +159,7 @@ public class GameManager : MonoBehaviour
 
         if (gameOverTimeText != null && gameTimer != null)
             totalScore = gameTimer.GetElapsedTime() + scoreBonus;
-            gameOverTimeText.text = "Time Protected: " + gameTimer.GetElapsedTime().ToString("F2") + "s\nBonus: " + scoreBonus.ToString("F2") + "\nTotal Score: " + totalScore.ToString("F2") + "pts";
+            gameOverTimeText.text = "Time Protected: " + gameTimer.GetElapsedTime().ToString("F2") + "s\nDistance Bonus: " + scoreBonus.ToString("F2") + "\nTotal Score: " + totalScore.ToString("F2") + "pts";
 
         // Pause the game
         Time.timeScale = 0f;

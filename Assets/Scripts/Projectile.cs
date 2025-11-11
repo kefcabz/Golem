@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
-            GameManager.scoreBonus += airTime;
+            GameManager.scoreBonus += Mathf.Pow(airTime,2); //adds projectile travel time ^ 2 to final score on enemy hit to reward tougher shots
             airTime = 0;
         }
         else
